@@ -7,14 +7,14 @@ export default function Contact() {
   return (
     <section id="contatti" className="py-24 md:py-38 relative">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-cream via-peach/10 to-cream pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-cream via-lavender-light/10 to-cream pointer-events-none" />
 
       <div className="relative max-w-[1400px] mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12">
           <div className="md:col-span-5">
             <TextReveal>
-              <p className="text-sm tracking-[0.2em] uppercase text-terracotta font-medium mb-6">
+              <p className="text-sm tracking-[0.2em] uppercase text-sage font-medium mb-6">
                 Contattaci
               </p>
             </TextReveal>
@@ -55,8 +55,8 @@ export default function Contact() {
 
               <TextReveal delay={0.35}>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-peach/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Phone size={18} className="text-terracotta" />
+                  <div className="w-10 h-10 rounded-full bg-lavender-light/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Phone size={18} className="text-sage" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-charcoal">
@@ -64,7 +64,7 @@ export default function Contact() {
                     </p>
                     <a
                       href="tel:+390236697450"
-                      className="text-sm text-charcoal/60 mt-1 hover:text-terracotta transition-colors"
+                      className="text-sm text-charcoal/60 mt-1 hover:text-sage transition-colors"
                     >
                       +39 02 3669 7450
                     </a>
@@ -74,14 +74,14 @@ export default function Contact() {
 
               <TextReveal delay={0.4}>
                 <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-full bg-powder/40 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-full bg-lavender-light/40 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <Mail size={18} className="text-charcoal/60" />
                   </div>
                   <div>
                     <p className="text-sm font-medium text-charcoal">Email</p>
                     <a
                       href="mailto:info@nidoscuolajacaranda.com"
-                      className="text-sm text-charcoal/60 mt-1 hover:text-terracotta transition-colors"
+                      className="text-sm text-charcoal/60 mt-1 hover:text-sage transition-colors"
                     >
                       info@nidoscuolajacaranda.com
                     </a>
@@ -121,7 +121,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="text"
-                        className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors placeholder:text-charcoal/30"
+                        className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-sage transition-colors placeholder:text-charcoal/30"
                         placeholder="Il tuo nome"
                       />
                     </div>
@@ -131,7 +131,7 @@ export default function Contact() {
                       </label>
                       <input
                         type="text"
-                        className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors placeholder:text-charcoal/30"
+                        className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-sage transition-colors placeholder:text-charcoal/30"
                         placeholder="Il tuo cognome"
                       />
                     </div>
@@ -143,7 +143,7 @@ export default function Contact() {
                     </label>
                     <input
                       type="email"
-                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors placeholder:text-charcoal/30"
+                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-sage transition-colors placeholder:text-charcoal/30"
                       placeholder="la.tua@email.com"
                     />
                   </div>
@@ -157,7 +157,7 @@ export default function Contact() {
                     </label>
                     <select
                       id="eta-bambino"
-                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors appearance-none"
+                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-sage transition-colors appearance-none"
                     >
                       <option value="">Seleziona...</option>
                       <option value="6-12">6 — 12 mesi</option>
@@ -172,14 +172,14 @@ export default function Contact() {
                     </label>
                     <textarea
                       rows={4}
-                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors resize-none placeholder:text-charcoal/30"
+                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-sage transition-colors resize-none placeholder:text-charcoal/30"
                       placeholder="Raccontaci cosa cerchi per il tuo bambino..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-charcoal text-cream text-sm tracking-[0.06em] uppercase font-medium rounded-full hover:bg-terracotta transition-colors duration-500 mt-4"
+                    className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-charcoal text-cream text-sm tracking-[0.06em] uppercase font-medium rounded-full hover:bg-sage transition-colors duration-500 mt-4"
                   >
                     Invia Richiesta
                     <ArrowUpRight size={16} />

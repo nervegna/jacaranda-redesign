@@ -9,21 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: "#FAFAF8",
+        cream: "#FAFBF9",
         terracotta: {
-          DEFAULT: "#7B6B9E",
-          light: "#B8A9CE",
-          dark: "#5A4D82",
+          DEFAULT: "#7BA966",
+          light: "#A5C898",
+          dark: "#5B8A48",
         },
         sage: {
-          DEFAULT: "#7DA07B",
-          light: "#A8BFA5",
-          dark: "#5E8A5B",
+          DEFAULT: "#5B4A8A",
+          light: "#8A7DB3",
+          dark: "#42366A",
         },
-        charcoal: "#2B2D2F",
-        softgray: "#F0EFEC",
-        peach: "#F9ECC6",
-        powder: "#DDD4EC",
+        charcoal: "#2D312E",
+        softgray: "#EEF1EC",
+        peach: "#C8E6B8",
+        powder: "#D8D2EC",
       },
       fontFamily: {
         display: ["Cormorant Garamond", "serif"],

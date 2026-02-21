@@ -9,7 +9,7 @@ export default function Philosophy() {
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
         {/* Section Label */}
         <TextReveal>
-          <p className="text-sm tracking-[0.2em] uppercase text-terracotta font-medium mb-16 md:mb-24">
+          <p className="text-sm tracking-[0.2em] uppercase text-sage font-medium mb-16 md:mb-24">
             La Nostra Filosofia
           </p>
         </TextReveal>
@@ -22,7 +22,7 @@ export default function Philosophy() {
               <h2 className="font-display text-3xl md:text-[3.5rem] leading-[1.1] text-charcoal mb-8">
                 Un luogo dove
                 <br />
-                <em className="font-light text-terracotta">l&apos;infanzia</em>
+                <em className="font-light text-sage">l&apos;infanzia</em>
                 <br />
                 è al centro
               </h2>
@@ -48,7 +48,7 @@ export default function Philosophy() {
 
             <TextReveal delay={0.4}>
               <div className="mt-10 flex items-center gap-4">
-                <div className="w-12 h-px bg-terracotta" />
+                <div className="w-12 h-px bg-sage" />
                 <span className="text-sm tracking-[0.1em] uppercase text-charcoal/50">
                   Fondato nel 2018
                 </span>
@@ -75,7 +75,7 @@ export default function Philosophy() {
             {/* Floating stat card */}
             <TextReveal delay={0.5}>
               <div className="relative md:-mt-20 md:ml-[-60px] bg-cream/90 backdrop-blur-sm p-8 rounded-xl shadow-lg max-w-xs">
-                <p className="font-display text-[3rem] leading-none text-terracotta font-semibold">
+                <p className="font-display text-[3rem] leading-none text-sage font-semibold">
                   2700
                 </p>
                 <p className="text-sm text-charcoal/60 mt-2 tracking-wide">

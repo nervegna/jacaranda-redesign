@@ -13,7 +13,7 @@ export default function Footer() {
           <h2 className="font-display text-3xl md:text-[4rem] leading-[1.1] mb-16 md:mb-24 max-w-3xl">
             Dove ogni bambino
             <br />
-            <em className="font-light text-terracotta">fiorisce</em>
+            <em className="font-light text-sage">fiorisce</em>
           </h2>
         </TextReveal>
 
@@ -23,11 +23,11 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center mb-4">
               <Image
-                src="/assets/jacaranda-logotype.jpg"
+                src="/assets/jacaranda-logo-original.jpg"
                 alt="Nido Scuola Jacarandà"
-                width={140}
-                height={50}
-                className="h-10 w-auto object-contain brightness-0 invert"
+                width={180}
+                height={65}
+                className="h-12 w-auto object-contain brightness-0 invert"
               />
             </div>
             <p className="text-sm text-cream/70 leading-relaxed">
@@ -52,7 +52,7 @@ export default function Footer() {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="block text-sm text-cream/60 hover:text-terracotta transition-colors duration-300"
+                  className="block text-sm text-cream/60 hover:text-sage transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -73,13 +73,13 @@ export default function Footer() {
               </p>
               <a
                 href="tel:+390236697450"
-                className="block hover:text-terracotta transition-colors"
+                className="block hover:text-sage transition-colors"
               >
                 +39 02 3669 7450
               </a>
               <a
                 href="mailto:info@nidoscuolajacaranda.com"
-                className="block hover:text-terracotta transition-colors"
+                className="block hover:text-sage transition-colors"
               >
                 info@nidoscuolajacaranda.com
               </a>
@@ -96,7 +96,7 @@ export default function Footer() {
                 href="https://www.instagram.com/nidoscuolajacaranda/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-terracotta hover:border-terracotta transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-sage hover:border-sage transition-all duration-300"
                 aria-label="Instagram"
               >
                 <Instagram size={16} />
@@ -105,7 +105,7 @@ export default function Footer() {
                 href="https://www.facebook.com/nidoscuolajacaranda/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-terracotta hover:border-terracotta transition-all duration-300"
+                className="w-10 h-10 rounded-full border border-cream/20 flex items-center justify-center hover:bg-sage hover:border-sage transition-all duration-300"
                 aria-label="Facebook"
               >
                 <Facebook size={16} />
@@ -114,7 +114,7 @@ export default function Footer() {
 
             <a
               href="#contatti"
-              className="inline-flex items-center gap-2 text-sm text-cream border border-cream/20 rounded-full px-6 py-3 hover:bg-terracotta hover:border-terracotta transition-all duration-300"
+              className="inline-flex items-center gap-2 text-sm text-cream border border-cream/20 rounded-full px-6 py-3 hover:bg-sage hover:border-sage transition-all duration-300"
             >
               Prenota una visita
               <ArrowUpRight size={14} />

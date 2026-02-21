@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
@@ -19,15 +20,20 @@ export default function LoadingScreen() {
           transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="fixed inset-0 z-[100] bg-cream flex flex-col items-center justify-center"
         >
-          {/* Logo text */}
+          {/* Logo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <span className="font-display text-3xl md:text-[3rem] text-charcoal font-light tracking-tight">
-              Jacarandà
-            </span>
+            <Image
+              src="/assets/jacaranda-logo-original.jpg"
+              alt="Nido Scuola Jacarandà"
+              width={400}
+              height={150}
+              className="h-32 md:h-40 w-auto object-contain"
+              priority
+            />
           </motion.div>
 
           {/* Progress bar */}

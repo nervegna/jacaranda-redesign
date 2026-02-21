@@ -27,13 +27,13 @@
 }
 
 :root {
-  --cream: #FAFAF8;
-  --terracotta: #7B6B9E;
-  --sage: #7DA07B;
-  --charcoal: #2B2D2F;
-  --softgray: #F0EFEC;
-  --peach: #F9ECC6;
-  --powder: #DDD4EC;
+  --cream: #FAFBF9;
+  --terracotta: #7BA966;
+  --sage: #5B4A8A;
+  --charcoal: #2D312E;
+  --softgray: #EEF1EC;
+  --peach: #C8E6B8;
+  --powder: #D8D2EC;
 }
 
 * {

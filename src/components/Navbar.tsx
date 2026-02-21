@@ -31,19 +31,20 @@ export default function Navbar() {
         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
           scrolled
-            ? "bg-cream/80 backdrop-blur-xl shadow-[0_1px_0_rgba(43,45,47,0.06)]"
+            ? "bg-white/90 backdrop-blur-xl shadow-[0_1px_0_rgba(43,45,47,0.06)]"
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-20 md:h-24">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-24 md:h-28">
           {/* Logo */}
           <a href="#" className="relative z-10 flex items-center">
             <Image
-              src="/assets/jacaranda-logotype.jpg"
+              src="/assets/jacaranda-logo-original.jpg"
               alt="Nido Scuola Jacarandà"
-              width={140}
-              height={50}
-              className="h-10 md:h-12 w-auto object-contain"
+              width={240}
+              height={90}
+              className="h-16 md:h-20 w-auto object-contain"
+              priority
             />
           </a>
 
@@ -53,7 +54,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-[0.08em] uppercase text-charcoal/70 hover:text-terracotta transition-colors duration-500 font-medium"
+                className="text-sm tracking-[0.08em] uppercase text-charcoal/70 hover:text-sage transition-colors duration-500 font-medium"
               >
                 {link.label}
               </a>
@@ -63,7 +64,7 @@ export default function Navbar() {
           {/* CTA Desktop */}
           <a
             href="#contatti"
-            className="hidden md:inline-flex text-sm tracking-[0.06em] uppercase font-medium px-6 py-3 bg-charcoal text-cream rounded-full hover:bg-terracotta transition-colors duration-500"
+            className="hidden md:inline-flex text-sm tracking-[0.06em] uppercase font-medium px-6 py-3 bg-charcoal text-cream rounded-full hover:bg-sage transition-colors duration-500"
           >
             Prenota Visita
           </a>
@@ -98,7 +99,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className="font-display text-3xl text-charcoal hover:text-terracotta transition-colors"
+                  className="font-display text-3xl text-charcoal hover:text-sage transition-colors"
                 >
                   {link.label}
                 </motion.a>
