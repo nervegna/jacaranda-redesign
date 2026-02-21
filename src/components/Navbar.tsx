@@ -29,21 +29,21 @@ export default function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
+        className={`fixed top-0 left-0 right-0 z-50 bg-white transition-all duration-700 ${
           scrolled
-            ? "bg-white/90 backdrop-blur-xl shadow-[0_1px_0_rgba(43,45,47,0.06)]"
-            : "bg-transparent"
+            ? "shadow-[0_1px_0_rgba(43,45,47,0.06)]"
+            : ""
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-24 md:h-28">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-32 md:h-40">
           {/* Logo */}
           <a href="#" className="relative z-10 flex items-center">
             <Image
               src="/assets/jacaranda-logo-original.jpg"
               alt="Nido Scuola Jacarandà"
-              width={240}
-              height={90}
-              className="h-16 md:h-20 w-auto object-contain"
+              width={480}
+              height={180}
+              className="h-28 md:h-36 w-auto object-contain"
               priority
             />
           </a>
