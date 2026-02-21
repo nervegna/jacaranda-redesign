@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "Filosofia", href: "#filosofia" },
@@ -36,7 +37,14 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <a href="#" className="relative z-10">
+          <a href="#" className="relative z-10 flex items-center gap-2.5">
+            <Image
+              src="/assets/jacaranda-icon.jpg"
+              alt="Jacarandà logo"
+              width={36}
+              height={36}
+              className="rounded-full"
+            />
             <span className="font-display text-xl md:text-2xl tracking-tight text-charcoal">
               <span className="font-semibold">Jacarandà</span>
             </span>

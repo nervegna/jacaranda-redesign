@@ -29,9 +29,8 @@ export default function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        {/* Gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/20 via-transparent to-charcoal/60" />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/30 via-transparent to-transparent" />
+        {/* Dark gradient overlay for WCAG AA text contrast (min 4.5:1) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/20" />
       </motion.div>
 
       {/* Mesh gradient accent */}

@@ -2,6 +2,7 @@
 
 import { TextReveal } from "./AnimationWrappers";
 import { Instagram, Facebook, ArrowUpRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -20,9 +21,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 pb-16 border-b border-cream/10">
           {/* Column 1: About */}
           <div className="md:col-span-1">
-            <p className="font-display text-xl font-semibold mb-4">
-              Jacarandà
-            </p>
+            <div className="flex items-center gap-2.5 mb-4">
+              <Image
+                src="/assets/jacaranda-icon.jpg"
+                alt="Jacarandà logo"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              <p className="font-display text-xl font-semibold">
+                Jacarandà
+              </p>
+            </div>
             <p className="text-sm text-cream/70 leading-relaxed">
               Asilo nido e scuola dell&apos;infanzia bilingue a Milano.
               Educazione ispirata al Reggio Approach.
