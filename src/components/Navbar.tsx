@@ -37,17 +37,14 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <a href="#" className="relative z-10 flex items-center gap-2.5">
+          <a href="#" className="relative z-10 flex items-center">
             <Image
-              src="/assets/jacaranda-icon.jpg"
-              alt="Jacarandà logo"
-              width={36}
-              height={36}
-              className="rounded-full"
+              src="/assets/jacaranda-logotype.jpg"
+              alt="Nido Scuola Jacarandà"
+              width={140}
+              height={50}
+              className="h-10 md:h-12 w-auto object-contain"
             />
-            <span className="font-display text-xl md:text-2xl tracking-tight text-charcoal">
-              <span className="font-semibold">Jacarandà</span>
-            </span>
           </a>
 
           {/* Desktop Links */}

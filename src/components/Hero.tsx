@@ -29,8 +29,8 @@ export default function Hero() {
           className="object-cover"
           sizes="100vw"
         />
-        {/* Natural gradient overlay — darkens only the bottom where text sits */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/25 to-transparent" />
+        {/* Strong gradient overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
       </motion.div>
 
       {/* Mesh gradient accent */}
@@ -50,7 +50,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-cream/80 text-sm md:text-base tracking-[0.2em] uppercase font-medium mb-6"
-            style={{ textShadow: '0 2px 20px rgba(0,0,0,0.4)' }}
+            style={{ textShadow: '0 4px 30px rgba(0,0,0,0.7)' }}
           >
             Asilo Nido Bilingue · Milano
           </motion.p>
@@ -61,7 +61,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
             className="font-display text-4xl md:text-3xl lg:text-4xl text-cream leading-[1.05] mb-8"
-            style={{ textShadow: '0 2px 20px rgba(0,0,0,0.4)' }}
+            style={{ textShadow: '0 4px 30px rgba(0,0,0,0.7)' }}
           >
             <span className="block text-[clamp(2.5rem,7vw,6rem)] font-light italic">
               Dove ogni bambino
@@ -77,7 +77,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
             className="text-cream/70 text-lg md:text-xl max-w-lg leading-relaxed font-light"
-            style={{ textShadow: '0 2px 20px rgba(0,0,0,0.4)' }}
+            style={{ textShadow: '0 4px 30px rgba(0,0,0,0.7)' }}
           >
             Un luogo dove curiosità, creatività e meraviglia guidano
             l&apos;apprendimento, dai 6 mesi ai 6 anni.

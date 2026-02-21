@@ -21,17 +21,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 pb-16 border-b border-cream/10">
           {/* Column 1: About */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2.5 mb-4">
+            <div className="flex items-center mb-4">
               <Image
-                src="/assets/jacaranda-icon.jpg"
-                alt="Jacarandà logo"
-                width={32}
-                height={32}
-                className="rounded-full"
+                src="/assets/jacaranda-logotype.jpg"
+                alt="Nido Scuola Jacarandà"
+                width={140}
+                height={50}
+                className="h-10 w-auto object-contain brightness-0 invert"
               />
-              <p className="font-display text-xl font-semibold">
-                Jacarandà
-              </p>
             </div>
             <p className="text-sm text-cream/70 leading-relaxed">
               Asilo nido e scuola dell&apos;infanzia bilingue a Milano.
