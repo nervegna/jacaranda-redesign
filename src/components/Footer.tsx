@@ -23,7 +23,7 @@ export default function Footer() {
             <p className="font-display text-xl font-semibold mb-4">
               Jacarandà
             </p>
-            <p className="text-sm text-cream/50 leading-relaxed">
+            <p className="text-sm text-cream/70 leading-relaxed">
               Asilo nido e scuola dell&apos;infanzia bilingue a Milano.
               Educazione ispirata al Reggio Approach.
             </p>
@@ -31,7 +31,7 @@ export default function Footer() {
 
           {/* Column 2: Navigation */}
           <div>
-            <p className="text-xs tracking-[0.15em] uppercase text-cream/40 font-medium mb-6">
+            <p className="text-xs tracking-[0.15em] uppercase text-cream/60 font-medium mb-6">
               Esplora
             </p>
             <nav className="space-y-3">
@@ -55,7 +55,7 @@ export default function Footer() {
 
           {/* Column 3: Contact */}
           <div>
-            <p className="text-xs tracking-[0.15em] uppercase text-cream/40 font-medium mb-6">
+            <p className="text-xs tracking-[0.15em] uppercase text-cream/60 font-medium mb-6">
               Contatti
             </p>
             <div className="space-y-3 text-sm text-cream/60">
@@ -81,7 +81,7 @@ export default function Footer() {
 
           {/* Column 4: Social + CTA */}
           <div>
-            <p className="text-xs tracking-[0.15em] uppercase text-cream/40 font-medium mb-6">
+            <p className="text-xs tracking-[0.15em] uppercase text-cream/60 font-medium mb-6">
               Seguici
             </p>
             <div className="flex gap-4 mb-8">
@@ -117,11 +117,11 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 pt-8">
-          <p className="text-xs text-cream/30">
+          <p className="text-xs text-cream/60">
             &copy; {new Date().getFullYear()} Nido Scuola Jacarandà — Scuola
             Innovativa S.r.l. Tutti i diritti riservati.
           </p>
-          <div className="flex gap-6 text-xs text-cream/30">
+          <div className="flex gap-6 text-xs text-cream/60">
             <a href="#" className="hover:text-cream/60 transition-colors">
               Privacy Policy
             </a>
