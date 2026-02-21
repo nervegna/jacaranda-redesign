@@ -111,7 +111,7 @@ export default function Hero() {
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
       >
-        <span className="text-cream/50 text-xs tracking-[0.3em] uppercase">
+        <span className="text-cream/80 text-xs tracking-[0.3em] uppercase">
           Scorri
         </span>
         <motion.div

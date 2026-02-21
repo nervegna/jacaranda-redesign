@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export const metadata: Metadata = {
   title: "Nido Scuola Jacarandà | Asilo Nido Bilingue Milano — Reggio Approach",
   description:
@@ -36,8 +42,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
+    canonical: "https://www.nidoscuolajacaranda.com",
     languages: {
-      "it-IT": "/",
+      "it": "https://www.nidoscuolajacaranda.com",
     },
   },
 };
@@ -64,6 +71,10 @@ export default function RootLayout({
           rel="preconnect"
           href="https://cdn.fontshare.com"
           crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&display=swap"
+          rel="stylesheet"
         />
       </head>
       <body className="grain">

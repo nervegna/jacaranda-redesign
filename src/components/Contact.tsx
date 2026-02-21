@@ -116,7 +116,7 @@ export default function Contact() {
                 <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
-                      <label className="text-xs tracking-[0.1em] uppercase text-charcoal/50 font-medium block mb-2">
+                      <label className="text-xs tracking-[0.1em] uppercase text-charcoal/70 font-medium block mb-2">
                         Nome
                       </label>
                       <input
@@ -126,7 +126,7 @@ export default function Contact() {
                       />
                     </div>
                     <div>
-                      <label className="text-xs tracking-[0.1em] uppercase text-charcoal/50 font-medium block mb-2">
+                      <label className="text-xs tracking-[0.1em] uppercase text-charcoal/70 font-medium block mb-2">
                         Cognome
                       </label>
                       <input
@@ -138,7 +138,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="text-xs tracking-[0.1em] uppercase text-charcoal/50 font-medium block mb-2">
+                    <label className="text-xs tracking-[0.1em] uppercase text-charcoal/70 font-medium block mb-2">
                       Email
                     </label>
                     <input
@@ -149,10 +149,16 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="text-xs tracking-[0.1em] uppercase text-charcoal/50 font-medium block mb-2">
+                    <label
+                      htmlFor="eta-bambino"
+                      className="text-xs tracking-[0.1em] uppercase text-charcoal/70 font-medium block mb-2"
+                    >
                       Età del bambino
                     </label>
-                    <select className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors appearance-none">
+                    <select
+                      id="eta-bambino"
+                      className="w-full bg-transparent border-b border-charcoal/15 pb-3 text-base text-charcoal focus:outline-none focus:border-terracotta transition-colors appearance-none"
+                    >
                       <option value="">Seleziona...</option>
                       <option value="6-12">6 — 12 mesi</option>
                       <option value="1-3">1 — 3 anni</option>
@@ -161,7 +167,7 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="text-xs tracking-[0.1em] uppercase text-charcoal/50 font-medium block mb-2">
+                    <label className="text-xs tracking-[0.1em] uppercase text-charcoal/70 font-medium block mb-2">
                       Messaggio
                     </label>
                     <textarea
