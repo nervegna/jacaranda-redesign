@@ -30,12 +30,21 @@ export const metadata: Metadata = {
     siteName: "Nido Scuola Jacarandà",
     locale: "it_IT",
     type: "website",
+    images: [
+      {
+        url: "https://www.nidoscuolajacaranda.com/assets/jacaranda-logo-original.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Nido Scuola Jacarandà - Asilo Nido Bilingue Milano",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Nido Scuola Jacarandà | Asilo Nido Bilingue Milano",
     description:
       "Educazione ispirata al Reggio Approach per bambini da 6 mesi a 6 anni a Milano.",
+    images: ["https://www.nidoscuolajacaranda.com/assets/jacaranda-logo-original.jpg"],
   },
   robots: {
     index: true,
@@ -47,6 +56,49 @@ export const metadata: Metadata = {
       "it": "https://www.nidoscuolajacaranda.com",
     },
   },
+};
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "@id": "https://www.nidoscuolajacaranda.com/#organization",
+  name: "Nido Scuola Jacarandà",
+  alternateName: "Jacarandà Milano",
+  description: "Asilo nido e scuola dell'infanzia bilingue a Milano con approccio educativo Reggio Approach per bambini da 6 mesi a 6 anni",
+  url: "https://www.nidoscuolajacaranda.com",
+  logo: "https://www.nidoscuolajacaranda.com/assets/jacaranda-logo-original.jpg",
+  image: "https://www.nidoscuolajacaranda.com/assets/jacaranda-logo-original.jpg",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Corso Sempione, 34/2",
+    addressLocality: "Milano",
+    addressRegion: "Lombardia",
+    postalCode: "20154",
+    addressCountry: "IT",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "45.4773",
+    longitude: "9.1715",
+  },
+  telephone: "+39 02 36697450",
+  email: "info@nidoscuolajacaranda.com",
+  priceRange: "€€€",
+  areaServed: {
+    "@type": "City",
+    name: "Milano",
+  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "07:30",
+      closes: "18:00",
+    },
+  ],
+  sameAs: [
+    "https://www.instagram.com/nidoscuolajacaranda",
+  ],
 };
 
 export default function RootLayout({
@@ -61,6 +113,10 @@ export default function RootLayout({
         <meta name="geo.placename" content="Milano" />
         <meta name="geo.position" content="45.4773;9.1715" />
         <meta name="ICBM" content="45.4773, 9.1715" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
