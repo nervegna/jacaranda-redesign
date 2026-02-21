@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.nidoscuolajacaranda.com/assets/jacaranda-logo-original.jpg",
+        url: "https://www.nidoscuolajacaranda.com/assets/og-image.png",
         width: 1200,
         height: 630,
         alt: "Nido Scuola Jacarandà - Asilo Nido Bilingue Milano",
@@ -44,7 +44,11 @@ export const metadata: Metadata = {
     title: "Nido Scuola Jacarandà | Asilo Nido Bilingue Milano",
     description:
       "Educazione ispirata al Reggio Approach per bambini da 6 mesi a 6 anni a Milano.",
-    images: ["https://www.nidoscuolajacaranda.com/assets/jacaranda-logo-original.jpg"],
+    images: ["https://www.nidoscuolajacaranda.com/assets/og-image.png"],
+  },
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
   },
   robots: {
     index: true,
