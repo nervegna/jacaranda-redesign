@@ -35,7 +35,7 @@ export default function Hero() {
 
       {/* Mesh gradient accent */}
       <div className="absolute top-0 right-0 w-[60%] h-[40%] opacity-30">
-        <div className="w-full h-full bg-gradient-radial from-lavender-light/40 via-transparent to-transparent rounded-full blur-3xl" />
+        <div className="w-full h-full bg-gradient-radial from-peach/40 via-transparent to-transparent rounded-full blur-3xl" />
       </div>
 
       {/* Content */}
@@ -92,7 +92,7 @@ export default function Hero() {
           >
             <a
               href="#contatti"
-              className="inline-flex items-center px-8 py-4 bg-cream text-charcoal text-sm tracking-[0.06em] uppercase font-medium rounded-full hover:bg-sage hover:text-cream transition-all duration-500"
+              className="inline-flex items-center px-8 py-4 bg-cream text-charcoal text-sm tracking-[0.06em] uppercase font-medium rounded-full hover:bg-terracotta hover:text-cream transition-all duration-500"
             >
               Scopri di più
             </a>

@@ -35,15 +35,15 @@ export default function Navbar() {
             : ""
         }`}
       >
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-32 md:h-40">
-          {/* Logo */}
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between h-24 md:h-28">
+          {/* Logo — 1.5x-2x original size */}
           <a href="#" className="relative z-10 flex items-center">
             <Image
               src="/assets/jacaranda-logo-original.jpg"
               alt="Nido Scuola Jacarandà"
-              width={480}
-              height={180}
-              className="h-28 md:h-36 w-auto object-contain"
+              width={240}
+              height={90}
+              className="h-16 md:h-20 w-auto object-contain"
               priority
             />
           </a>
@@ -54,7 +54,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm tracking-[0.08em] uppercase text-charcoal/70 hover:text-sage transition-colors duration-500 font-medium"
+                className="text-sm tracking-[0.08em] uppercase text-charcoal/70 hover:text-terracotta transition-colors duration-500 font-medium"
               >
                 {link.label}
               </a>
@@ -64,7 +64,7 @@ export default function Navbar() {
           {/* CTA Desktop */}
           <a
             href="#contatti"
-            className="hidden md:inline-flex text-sm tracking-[0.06em] uppercase font-medium px-6 py-3 bg-charcoal text-cream rounded-full hover:bg-sage transition-colors duration-500"
+            className="hidden md:inline-flex text-sm tracking-[0.06em] uppercase font-medium px-6 py-3 bg-charcoal text-cream rounded-full hover:bg-terracotta transition-colors duration-500"
           >
             Prenota Visita
           </a>
@@ -99,7 +99,7 @@ export default function Navbar() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: i * 0.1 }}
-                  className="font-display text-2xl text-charcoal hover:text-sage transition-colors"
+                  className="font-display text-3xl text-charcoal hover:text-terracotta transition-colors"
                 >
                   {link.label}
                 </motion.a>

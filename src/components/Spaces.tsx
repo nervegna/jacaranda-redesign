@@ -54,7 +54,7 @@ export default function Spaces() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-16 md:mb-24">
           <div>
             <TextReveal>
-              <p className="text-sm tracking-[0.2em] uppercase text-sage font-medium mb-6">
+              <p className="text-sm tracking-[0.2em] uppercase text-terracotta font-medium mb-6">
                 I Nostri Spazi
               </p>
             </TextReveal>
